@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070708">
+<title>The Mystic Oracle — Steve</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient"><div class="grain"></div><div class="orb a"></div><div class="orb b"></div><div class="stars a"></div><div class="stars b"></div></div>
+
+<header class="topbar">
+<a class="brand" href="#" id="home">THE MYSTIC ORACLE <span>BY STEVE</span></a>
+<div class="progress-shell"><div id="progressBar"></div></div>
+</header>
+
+<main>
+<section id="intro" class="screen active">
+<div class="intro-copy">
+<div class="eyebrow">A PRIVATE READING</div>
+<h1>The future is<br><em>already waiting.</em></h1>
+<p>Give the Oracle a few details. It will use your answers to form a reading tailored to you.</p>
+<button class="primary" id="enter">Enter the Oracle <span>→</span></button>
+<small>No account. No data collection. Just curiosity.</small>
+</div>
+<div class="crystal-stage"><div class="halo"></div><div class="crystal"></div><div class="ring r1"></div><div class="ring r2"></div></div>
+</section>
+
+<section id="questions" class="screen">
+<div class="question-box">
+<div class="meta"><span id="count">01</span> / 06</div>
+<div class="qline"><div id="qbar"></div></div>
+<div class="eyebrow" id="eyebrow"></div>
+<h2 id="qtitle"></h2>
+<p id="qhelp"></p>
+<div id="answers"></div>
+<div class="actions"><button class="ghost" id="back">Back</button><button class="primary small" id="next" disabled>Continue <span>→</span></button></div>
+</div>
+</section>
+
+<section id="analysis" class="screen">
+<div class="analysis-box">
+<div class="oracle-mini"><div class="mini-orb"></div><div><div class="eyebrow">ORACLE ANALYSIS</div><strong>Reading your choices</strong></div></div>
+<div class="analysis-head"><span id="analysisText">Interpreting the pattern...</span><span id="analysisPct">0%</span></div>
+<div class="analysis-track"><div id="analysisBar"></div></div>
+<div id="logs" class="logs"></div>
+</div>
+</section>
+
+<section id="prediction" class="screen">
+<div class="prediction-box">
+<div class="eyebrow">YOUR READING</div>
+<h2 id="pTitle"></h2>
+<p id="pText"></p>
+<div class="pattern"><div id="symbol">✦</div><div><div class="label">THE PATTERN</div><div id="pattern"></div></div></div>
+<button class="primary" id="toConfirm">Continue to the final reading <span>→</span></button>
+</div>
+</section>
+
+<section id="confirm" class="screen">
+<div class="confirm-box">
+<div class="seal">ORACLE<br><span>FINAL</span></div>
+<div class="eyebrow">ONE LAST STEP</div>
+<h2 id="cTitle">Your future is ready.</h2>
+<p>The Oracle has finished the reading. What remains is the final reveal.</p>
+<button class="primary" id="reveal">Reveal my future <span>→</span></button>
+<small>You may not get the answer you expect.</small>
+</div>
+</section>
+
+<section id="revealScreen" class="screen reveal-screen">
+<div class="reveal-content"><div class="eyebrow">YOUR FUTURE</div><h2>is already here.</h2><div class="spinner"></div></div>
+</section>
+
+<section id="troll" class="screen troll-screen">
+<div class="troll-box">
+<div class="badge">THE ORACLE HAS SPOKEN</div>
+<div class="video"><video id="video" preload="auto" playsinline controls><source src="assets/reveal.mp4" type="video/mp4"></video></div>
+<h2>You thought I was actually going to tell you your future? 😂</h2>
+<p>I don't have time for that. Besides, your future looks darker than a black hole. 🥀</p>
+<button class="ghost restart" id="restart">Read another future</button>
+<div class="credit">THE MYSTIC ORACLE · MADE BY STEVE</div>
+</div>
+</section>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
