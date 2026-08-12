@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#02030a">
+  <title>Infinite Depth | Steve</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app"></div>
+
+  <div class="hud">
+    <div class="brand">INFINITE DEPTH <span>BY STEVE</span></div>
+    <div class="level">
+      <span id="levelName">UNIVERSE</span>
+      <div class="levelTrack"><i id="levelBar"></i></div>
+    </div>
+    <div class="hint" id="hint">Scroll to travel deeper into space</div>
+  </div>
+
+  <div class="surface-ui" id="surfaceUI" aria-hidden="true">
+    <div class="danger-card">
+      <div class="danger-icon">☢</div>
+      <div class="eyebrow">PLANETARY CONTROL</div>
+      <h1>Destroy the World</h1>
+      <p>One button. One planet. One questionable decision.</p>
+      <button id="destroyBtn">CLICK ME TO DESTROY WORLD</button>
+      <small>WARNING: This button is definitely not suspicious.</small>
+    </div>
+  </div>
+
+  <div class="troll-ui" id="trollUI" aria-hidden="true">
+    <div class="troll-card">
+      <div class="video-wrap">
+        <video id="trollVideo" preload="auto" playsinline controls>
+          <source src="assets/troll.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <h2>You Thought You Would Destroy The World By One Button? 😂</h2>
+      <p>Fool people 😂 Ezzzz, Rickroll.</p>
+      <button id="closeTroll">Return to Space</button>
+    </div>
+  </div>
+
+  <div class="loading" id="loading">
+    <div class="loader"></div>
+    <div>CALIBRATING DEEP-SPACE NAVIGATION</div>
+    <small>Steve's Interactive Galaxy</small>
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
